@@ -1,9 +1,13 @@
-from lib.diary import *
+from lib.diary import Diary
 
-def test_make_snippet():
-    result = make_snippet("Hello my name is Mahmoud, I am from Egypt")
-    assert result == "Hello..."
+"""
+Given a diary with no entry
+Get a word count of 0
+"""
+def test_count_words_0():
+    diary = Diary()
+    assert diary.count_words() == 0
 
-def test_count_words():
-    result = count_words("Bonjour je m'appelle Do")
-    assert result == 4
+"""
+
+"""

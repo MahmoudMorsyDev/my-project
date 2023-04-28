@@ -8,16 +8,17 @@ class DiaryEntry:
         # Side-Effects:
         #   Sets the property contents of the diary entry
         #   Initializes the list of contacts
-        pass
+        self.contents = contents
+        self.contact_list = []
 
     def add_contact(self, contact):
         # Parameters:
         #   contact: Phone number of the contact that is added
         # Side-Effects:
         #    Add a contact to the list of contacts
-        pass
+        self.contact_list.append(contact)
 
     def get_contacts(self):
         # Returns:
         #   a list of the contacts
-        pass
+        return self.contact_list

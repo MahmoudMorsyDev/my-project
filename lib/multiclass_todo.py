@@ -4,4 +4,4 @@ class Todo:
         #   task: the task to do
         # Side Effects:
         #   Sets the property task
-        pass
+        self.task = task
